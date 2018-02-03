@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56f57d61-aaa6-4ac3-b480-986c364c2d81" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Dziekanat.java" afterPath="$PROJECT_DIR$/src/Dziekanat.java" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dziekanat.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dziekanat.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Dziekanat.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-136">
@@ -33,6 +33,16 @@
                 <element signature="e#1686#1687#0" expanded="true" />
                 <element signature="e#1729#1730#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -192,8 +202,8 @@
         <option value="$PROJECT_DIR$/src/Student.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Kierunek.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Dziekanat.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -317,12 +327,12 @@
       <option name="presentableId" value="Default" />
       <updated>1517609430256</updated>
       <workItem from="1517609433772" duration="583000" />
-      <workItem from="1517610037232" duration="8302000" />
+      <workItem from="1517610037232" duration="8365000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8885000" />
+    <option name="totallyTimeSpent" value="8948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -612,14 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -658,6 +660,14 @@
             <element signature="e#1686#1687#0" expanded="true" />
             <element signature="e#1729#1730#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
