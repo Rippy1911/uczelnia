@@ -8,19 +8,41 @@ public class Dziekanat extends Main {
     public void Dziekanat(String[] args) {
         this.importujDane();
         this.wyswietlListeStudentow();
-    }
-
-    public void wyswietlListeStudentow() {
-        System.out.printf("Informacje ogólne \n" +
-                "Ilość wszystkich studentów: %d" +
-                "Ilość osób na kierunku informatyka: %d",
-                this.iloscWszystkichStudentow(), this.getKierunek("Informatyka").getStudenci().length);
-
+        System.out.println("Lista studentów: ");
         for (Student student: this.Studenci) {
             System.out.printf("Imię i nazwisko: %s %s \n",
                     student.getImie(),
                     student.getNazwisko());
         }
+
+        System.out.println("Lista wykładowców: ");
+        for (Student student: this.Studenci) {
+            System.out.printf("Imię i nazwisko: %s %s \n",
+                    student.getImie(),
+                    student.getNazwisko());
+        }
+
+        System.out.println("Lista kierunków: ");
+        for (Student student: this.Studenci) {
+            System.out.printf("Imię i nazwisko: %s %s \n",
+                    student.getImie(),
+                    student.getNazwisko());
+        }
+
+        System.out.println("Lista przedmiotów: ");
+        for (Student student: this.Studenci) {
+            System.out.printf("Imię i nazwisko: %s %s \n",
+                    student.getImie(),
+                    student.getNazwisko());
+        }
+    }
+
+    public void wyswietlListeStudentow() {
+        System.out.printf("Informacje ogólne\n" +
+                "Ilość wszystkich studentów: %d\n" +
+                "Ilość osób na kierunku informatyka: %d\n",
+                this.iloscWszystkichStudentow(), this.getKierunek("Informatyka").getStudenci().length);
+
     }
 
     public int iloscWszystkichStudentow() {
