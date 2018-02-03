@@ -1,5 +1,5 @@
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.stream.Stream;
 
 public class Kierunek extends Dziekanat {
     private String nazwaKierunku;
@@ -11,8 +11,18 @@ public class Kierunek extends Dziekanat {
         this.przedmioty = przedmioty;
     }
 
-    public addStudent(Student student) {
-        this.studenci = this.appendValue(this.studenci, student);
+    public Student[] addStudent(Student student) {
+//        this.studenci = this.concatAll(this.studenci, new Student[]{student});
+//        this.studenci = $.concat(this.studenci, new Student[]{student});
+//        this.studenci = this.appendValue(this.studenci, student);
+        if(this.studenci == null) {
+            this.studenci = new Student[]{student};
+        } else {
+            this.studenci = Stream.concat(Arrays.stream(this.studenci), Arrays.stream(new Student[]{student}))
+                    .toArray(Student[]::new);
+        }
+
+        return this.studenci;
     }
 
     public String getNazwaKierunku() {
@@ -31,11 +41,18 @@ public class Kierunek extends Dziekanat {
         this.przedmioty = przedmioty;
     }
 
-    public Student[] appendValue(Student[] obj, Student newObj) {
-
-        ArrayList<Student> temp = new ArrayList<Student>(Arrays.asList(obj));
-        temp.add(newObj);
-        return temp.toArray();
-
+    public Student[] getStudenci() {
+        return studenci;
     }
+
+    public void setStudenci(Student[] studenci) {
+        this.studenci = studenci;
+    }
+//    public Student[] appendValue(Student[] obj, Student newObj) {
+//
+//        ArrayList<Student> temp = new ArrayList<Student>(Arrays.asList(obj));
+//        temp.add(newObj);
+//        return temp.toArray();
+//
+//    }
 }

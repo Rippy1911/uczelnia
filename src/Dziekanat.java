@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class Dziekanat extends Main {
     private Student[] Studenci;
     private Przedmiot[] Przedmioty;
@@ -16,7 +14,7 @@ public class Dziekanat extends Main {
         System.out.printf("Informacje ogólne \n" +
                 "Ilość wszystkich studentów: %d" +
                 "Ilość osób na kierunku informatyka: %d",
-                this.iloscWszystkichStudentow(), this.getKierunek("Informatyka").);
+                this.iloscWszystkichStudentow(), this.getKierunek("Informatyka").getStudenci().length);
 
         for (Student student: this.Studenci) {
             System.out.printf("Imię i nazwisko: %s %s \n",
@@ -72,7 +70,9 @@ public class Dziekanat extends Main {
 
 
         // Deklarujemy kierunki
-        Kierunek KierunekInformatyka = new Kierunek(new Przedmiot[]{Informatyka, Fizyka, PodstawyProgramowania});
+        Kierunek KierunekInformatyka = new Kierunek(
+                "Informatyka",
+                new Przedmiot[]{Informatyka, Fizyka, PodstawyProgramowania});
 
         this.Kierunki = new Kierunek[] {
             KierunekInformatyka
@@ -80,17 +80,17 @@ public class Dziekanat extends Main {
 
 
         // Deklarujemy roczniki
-        Rocznik Rocznik2017 = new Rocznik(2017,
+        Rocznik Rocznik2017 = new Rocznik(
+                2017,
                 new Kierunek[]{KierunekInformatyka});
 
 
         // Deklarujemy studentów
-        String[] zainteresowania = {"Książki", "Seks"};
         Zaliczenie[] zaliczenia = {new Zaliczenie()};
         Student JanKowalski = new Student(
                 "Jan", "Kowalski",
                 "12.03.1998", "Wrocław",
-                zainteresowania, "98031200831",
+                new String[]{"Książki", "Seks"}, "98031200831",
                 "Mężczyzna", zaliczenia,
                 KierunekInformatyka, Rocznik2017);
 
